@@ -11,6 +11,7 @@ class LeftNavLayout extends React.Component {
 
     render(){
       const { match } = this.props
+      console.log("match",match)
       return(
         <>
             <div className="row">
@@ -35,7 +36,7 @@ class LeftNavLayout extends React.Component {
                         <Route 
                             exact path={`${match.path}`}
                             render={(props) => <ProfilePage {...props} /> }/>
-                        />
+                        
                         <Route path={`${match.path}/paged`} component={PageD} />
                         <Route path={`${match.path}/pagee`} component={PageE} />
                         <Route path={`${match.path}/pagef`} component={PageF} />

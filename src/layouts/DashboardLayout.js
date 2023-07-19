@@ -20,7 +20,6 @@ class DashboardLayout extends React.Component {
                     <Route 
                         exact path={`${match.path}`}
                         render={(props) => <DashboardPage {...props} /> }/>
-                    />
                     <Route path={`${match.path}/pagea`} component={PageA} />
                     <Route path={`${match.path}/pageb`} component={PageB} />
                     <Route path={`${match.path}/pagec`} component={PageC} />
